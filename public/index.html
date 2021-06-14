@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS - Hello World</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tailwind v2 CSS - Grids Classes</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1 class="font-bold text-3xl text-[#FF65FF] border-3 border-green">Hello! This is Tailwind World!</h1>
+<body class="min-h-screen bg-green-800">
+	<div class="bg-yellow-100 py-2">
+		<h1 class="text-3xl text-[#000000] text-center mb-0">Tailwind Grids</h1>
+		<h2 class="text-[#333333] text-center border-green mb-0">Responsive Gallery Tryout</h2>
+	</div>
+	<div class="text-white text-sm text-right whitespace-nowrap p-2">
+		view
+		<span class="inline-block sm:hidden">mobile 1<sup>st</sup>/default (<640)</span>
+		<span class="hidden sm:inline-block md:hidden">SM (>=640px)</span>
+		<span class="hidden md:inline-block lg:hidden">MD (>=768px)</span>
+		<span class="hidden lg:inline-block xl:hidden">LG (>=1024px)</span>
+		<span class="hidden xl:inline-block 2xl:hidden">XL (>=1280px)</span>
+		<span class="hidden 2xl:inline-block">2XL (>=1536px)</span>
+	</div>
+	<div class="flex justify-center items-center pt-10">
+		<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 grid-rows-3 gap-x-6 gap-y-5 text-7xl text-red-700">
+
+			<div class="col-span-2 row-span-2 2xl:col-span-3 2xl:row-span-3 bg-yellow-300 p-3 rounded-lg">1</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">2</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">3</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">4</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">5</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">6</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">7</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">8</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">9</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">10</div>
+
+			<div class="bg-yellow-300 p-3 rounded-lg">11</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">12</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">13</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">14</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">15</div>
+			<div class="md:col-span-2 md:row-span-2 xl:col-span-1 xl:row-span-1 bg-yellow-300 p-3 rounded-lg">16</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">17</div>
+			<div class="2xl:col-span-2 2xl:row-span-2 bg-yellow-300 p-3 rounded-lg">18</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">19</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">20</div>
+
+			<div class="bg-yellow-300 p-3 rounded-lg">21</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">22</div>
+			<div class="xl:col-span-2 xl:row-span-2 2xl:col-span-1 2xl:row-span-1 bg-yellow-300 p-3 rounded-lg">23</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">24</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">25</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">26</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">27</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">28</div>
+			<div class="bg-yellow-300 p-3 rounded-lg">29</div>
+
+			<div class="bg-yellow-300 p-3 rounded-lg">30</div>
+
+
+		</div>
+		
+	</div>
 </body>
 </html>
